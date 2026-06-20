@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snuser juridisk information</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f4ee;
+        --card: #ffffff;
+        --text: #14304f;
+        --muted: #637083;
+        --border: #e7ddd1;
+        --accent: #194a7a;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: radial-gradient(circle at top left, #ffffff 0, var(--bg) 45%, #efe6dc 100%);
+        color: var(--text);
+        font-family: Georgia, "Times New Roman", serif;
+        line-height: 1.6;
+      }
+      main {
+        width: min(820px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        box-shadow: 0 20px 60px rgba(20, 48, 79, 0.08);
+        padding: clamp(24px, 5vw, 48px);
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2.25rem, 8vw, 4rem);
+        letter-spacing: -0.04em;
+      }
+      p {
+        color: var(--muted);
+        margin: 0 0 24px;
+      }
+      a {
+        color: var(--accent);
+        font-weight: 700;
+        text-decoration: none;
+      }
+      a:hover { text-decoration: underline; }
+      .links {
+        display: grid;
+        gap: 14px;
+        margin: 28px 0;
+      }
+      .link-card {
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 18px 20px;
+        background: #fbfaf7;
+      }
+      .meta {
+        border-top: 1px solid var(--border);
+        margin-top: 30px;
+        padding-top: 20px;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card" aria-labelledby="page-title">
+        <h1 id="page-title">Snuser juridisk information</h1>
+        <p>Här finns Snusers offentliga juridiska information för användare, App Store-granskning och övriga plattformar.</p>
+        <div class="links" aria-label="Juridiska dokument">
+          <a class="link-card" href="./privacy-policy.html">Integritetspolicy</a>
+          <a class="link-card" href="./terms.html">Användarvillkor</a>
+        </div>
+        <p class="meta">
+          Kontakt: <a href="mailto:snuser.app@gmail.com">snuser.app@gmail.com</a><br />
+          Senast uppdaterad: 19 juni 2026
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
